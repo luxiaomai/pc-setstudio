@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/about.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic"
+          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Playball" rel="stylesheet" type="text/css">
+    <script>
+        $(function () {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
+            $(pull).on('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function () {
+                var w = $(window).width();
+                if (w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="top-header">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" style=" width:150px;height:65px;">
+                </div>
+                <!----start-top-nav---->
+                <nav class="top-nav">
+                    <ul class="top-nav">
+                        <li class="page-scroll"><a href="index.html" class="scroll">Home </a></li>
+                        <li class="active"><a href="about.html" class="scroll">ABOUT</a></li>
+                        <li class="page-scroll"><a href="projects.html" class="scroll">PROJECTS</a></li>
+                        <li class="contatct-active"><a href="contact.html" class="scroll">Contact</a></li>
+                    </ul>
+                    <a href="#" id="pull"><img src="images/nav-icon.png" title="menu"></a>
+                </nav>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-1" style="float: right"><img src="images/about.jpg" class="img-responsive center-block"></div>
+                <div class="font-sty col-md-4" style="float:left; padding-bottom: 60px;">
+                    <div>創立理念</div>
+                    <div>SET STUDIO于2017年成立，主要工作領域为軟裝設計，傢俱定制，品牌升級，包括私人住宅和商業空間項目。</div>
+                    <div>SET STUDIO，SET分別解釋為Simply（簡約）、Esthetic（審美）、Timeless（永恆）。主創設計師曾于英國藝術學院深造，受北歐設計的啟發，將簡約而永恆的美學帶入市场，有别于现有的千篇一律的設計格局，简约而不简单；并期望将内敛而具艺术感的設計風格，高質量而舒適的傢俱分享給對生活品味有相同追求的人。</div>
+                    <div>设计其实和生活一样，都在放纵和克制，简单和複雜之間选择与徘徊，只有在其中找到最完美的平衡點，在沒有任何元素可以增加或者減少的時候，才能真正感受生活之美。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

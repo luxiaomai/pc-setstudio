@@ -1,0 +1,59 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    background: #FFf;
+}
+
+.main {
+    padding-top: 9em;
+}
+
+.font-sty div {
+    font-size: 1em;
+    color: #888;
+    letter-spacing: 1px;
+    margin-top: 2.5em;		text-indent: 4px;
+}
+
+.font-sty div:nth-child(1) span {
+    width: 2.3em;
+    display: inline-block;
+}
+
+.font-sty div:nth-child(2) span, .font-sty div:nth-child(3) span, .font-sty div:nth-child(4) span, .font-sty div:nth-child(6) span {
+    width: 3em;
+    display: inline-block;
+}
+
+.font-sty div:nth-child(5) span {
+    width: 1.1em;
+    display: inline-block;
+}
+
+/* 屏幕小于991px */
+@media screen and (max-width: 991px) {
+    .font-sty div {
+        text-align: left;
+    }
+}
+
+/* 屏幕小于768px */
+@media screen and (max-width: 768px) {
+    .main {
+        padding-top: 6em;
+    }
+
+    .font-sty div {
+        text-align: left;
+    }
+}
+
+/* 屏幕小于414px */
+@media screen and (max-width: 414px) {
+    .font-sty div {
+        font-size: 0.8em;
+        color: #888;
+        letter-spacing: 1px;
+        margin-top: 1.5em;
+    }
+}

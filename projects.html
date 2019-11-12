@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/projects.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic"
+          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Playball" rel="stylesheet" type="text/css">
+    <script>
+        $(function () {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
+            $(pull).on('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function () {
+                var w = $(window).width();
+                if (w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <div class="top-header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" style=" width:150px;height:65px;">
+            </div>
+            <!----start-top-nav---->
+            <nav class="top-nav">
+                <ul class="top-nav">
+                    <li class="page-scroll"><a href="index.html" class="scroll">Home </a></li>
+                    <li class="page-scroll"><a href="about.html" class="scroll">ABOUT</a></li>
+                    <li class="active"><a href="projects.html" class="scroll">PROJECTS</a></li>
+                    <li class="page-scroll"><a href="contact.html" class="scroll">Contact</a></li>
+                </ul>
+                <a href="#" id="pull"><img src="images/nav-icon.png" title="menu"></a>
+            </nav>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<div id="wrapper" style="display: block;">
+    <section class="row">
+        <div class="grid">
+            <article class="grid-item grid-item-2">
+                <a href="retro_chic_apartment.html">
+                    <figure>
+                        <img class="lazyloaded" alt="Retro chic apartment" src="images/Retro%20chic%20apartment/cove.jpg">
+                    </figure>
+                    <h2>Retro chic apartment</h2>
+                    
+                </a>
+            </article>
+            <article class="grid-item grid-item-2">
+                <a href="ringroom.html">
+                    <figure>
+                        <img class="lazyloaded" alt="Ringroom" src="images/Ringroom/cove.jpg">
+                    </figure>
+                    <h2>Ringroom</h2>
+                   
+                </a>
+            </article>
+            <article class="grid-item grid-item-2">
+                <a href="modern_italian_apartment.html">
+                    <figure>
+                        <img class="lazyloaded" alt="Modern italian apartment" src="images/Modern%20italian%20apartment/cove.jpg">
+                    </figure>
+                    <h2>Modern italian apartment</h2>
+                  
+                </a>
+            </article>
+            <article class="grid-item grid-item-1">
+                <a href="delta_showroom.html">
+                    <figure>
+                        <img class="lazyloaded" alt="Delta showroom" src="images/Delta%20showroom/cover.jpg">
+                    </figure>
+                    <h2>Delta showroom</h2>
+                   
+                </a>
+            </article>
+            <article class="grid-item grid-item-1">
+                <a href="living_in_gallery.html">
+                    <figure>
+                        <img class="lazyloaded" alt="living in gallery" src="images/living%20in%20gallery/cove.jpg">
+                    </figure>
+                    <h2>living in gallery</h2>
+                   
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <br class="clear">
+</div>
+</body>
+</html>

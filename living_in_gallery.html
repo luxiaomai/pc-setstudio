@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retro Chic Apartment</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="./js/jquery.min.js"></script>
+    <link href="./css/architecture.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic"
+          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Playball" rel="stylesheet" type="text/css">
+    <script>
+        $(function () {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
+            $(pull).on('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function () {
+                var w = $(window).width();
+                if (w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="top-header">
+            <div class="container">
+               <div class="logo">
+                    <img src="./images/logo.png" style=" width:150px;height:65px;">
+                </div>
+                <!----start-top-nav---->
+                <nav class="top-nav">
+                    <ul class="top-nav">
+                        <li class="page-scroll"><a href="index.html" class="scroll">Home </a></li>
+                        <li class="page-scroll"><a href="about.html" class="scroll">ABOUT</a></li>
+                        <li class="active"><a href="projects.html" class="scroll">PROJECTS</a></li>
+                        <li class="contatct-active"><a href="contact.html" class="scroll">Contact</a></li>
+                    </ul>
+                    <a href="#" id="pull"><img src="./images/nav-icon.png" title="menu"></a>
+                </nav>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="retro_chic_apartment_page1">
+                  
+                    <img class="cover" src="./images/living in gallery/cove.jpg">
+                    <i class="cover_p">LIVING IN GALLERY</i>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row living_in_gallery1">
+                <div class="col-sm-12" style="position: relative;">
+                    <p class="sdw">此次的設計主題是 living in gallery，運用了極簡色彩的大師藝術畫，提取其中色彩和空間相互呼應，讓住客如置身在畫展的藝術品當中，搭配北歐經典設計師家具與燈具，營造出精緻而內斂的氣息。</p>
+                    <img src="./images/living in gallery/1.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row living_in_gallery2">
+                <div class="col-sm-12" style="position: relative;">
+                    <div class="sdw">
+                        <p class="p1">LIVING ROOM</p>
+                        <p>客廳用中世紀極簡藝術畫大師 Barnett Newman 紅白藍的灰調三色畫作為提取元素，紅白色作墻身，藍色布料和裝飾品為點綴，輔以金屬與大理石的材質來提升整體質感。</p>
+                        <p>而同樣由中世紀北歐家具大師 Arne Jacobsen 設計的天鵝椅也用作客廳的點睛，而同年代卻不同領域的兩個大師的作品碰撞在一起，也是值得玩味的地方。</p>
+                    </div>
+                    <img src="./images/living in gallery/2.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row retro_chic_apartment_page4">
+                <div class="col-sm-12">
+                    <img src="./images/living in gallery/3.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row retro_chic_apartment_page4">
+                <div class="col-sm-12">
+                    <img src="./images/living in gallery/4.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row living_in_gallery3">
+                <div class="col-sm-6 col-xs-12" style="position: relative; padding-right: 0;">
+                    <img class="img1" src="./images/living in gallery/5.jpg">
+                    <div class="sdw">
+                        <div style="width: 50%;">
+                            <p class="p1">DINING ROOM</p>
+                        </div>
+                        <div class="right" style="width: 50%;">
+                            <p>餐廳用木材間分了一個區域，在空間上營造視覺劃分。</p>
+                            <p>家具用鬱金香圓桌和同樣由家具大師Arne Jacobsen 設計的簡約餐椅，搭配多層設計散發光影層次的雪球燈，讓餐廳再滿足功能性至於更注重設計的質感。</p>
+                            <p>餐桌面大理石的紋路與墻面歐松板的細紋相呼應。空間蘊著一分衝動。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <img class="img2" src="./images/living in gallery/6.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="living_in_gallery4" style="display: flex; position: relative;">
+                <div style="width: 50%; align-self: flex-start;">
+                    <img class="img1" src="./images/living in gallery/7.jpg">
+                </div>
+                <div style="width: 22%; align-self: center; margin-left: 14%;">
+                    <img class="img2" src="./images/living in gallery/8.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row living_in_gallery5">
+                <div class="col-sm-6 col-xs-6">
+                    <img src="./images/living in gallery/9.jpg">
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                    <img src="./images/living in gallery/10.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="living_in_gallery6" style="position: relative; display: flex;">
+                <div style="width: 40%; align-self: flex-end;">
+                    <div class="sdw">
+                        <p class="p1">BEDROOM</p>
+                        <p>房間用了抽象派畫家 Mark Rothko 的作品，灰藍的畫中如一半夜色和一半海洋，使人感覺靜謐。</p>
+                        <p>灰色對應床品，藍色對應窗簾，襯以紅色背景去做色彩碰撞；結構用鏡像手法佈局，吧藝術畫置於視線中點，帶有黃銅質感的北歐床頭燈分置兩邊，營造空間平衡感，使人能在臥室環境里沉靜下來。</p>
+                    </div>
+                </div>
+                <div style="width: 60%; float: right;">
+                    <img src="./images/living in gallery/11.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row retro_chic_apartment_page4">
+                <div class="col-sm-12">
+                    <img src="./images/living in gallery/12.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row retro_chic_apartment_page4">
+                <div class="col-sm-12">
+                    <img src="./images/living in gallery/13.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="retro_chic_apartment_page7">
+                    <img class="img1" src="./images/Delta showroom/cover1.jpg">
+                    <img class="img2" src="./images/logo2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

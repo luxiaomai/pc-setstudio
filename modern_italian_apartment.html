@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retro Chic Apartment</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="./js/jquery.min.js"></script>
+    <link href="./css/architecture.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic"
+          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Playball" rel="stylesheet" type="text/css">
+    <script>
+        $(function () {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
+            $(pull).on('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function () {
+                var w = $(window).width();
+                if (w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="top-header">
+            <div class="container">
+              <div class="logo">
+                    <img src="./images/logo.png" style=" width:150px;height:65px;">
+                </div>
+                <!----start-top-nav---->
+                <nav class="top-nav">
+                    <ul class="top-nav">
+                        <li class="page-scroll"><a href="index.html" class="scroll">Home </a></li>
+                        <li class="page-scroll"><a href="about.html" class="scroll">ABOUT</a></li>
+                        <li class="active"><a href="projects.html" class="scroll">PROJECTS</a></li>
+                        <li class="contatct-active"><a href="contact.html" class="scroll">Contact</a></li>
+                    </ul>
+                    <a href="#" id="pull"><img src="./images/nav-icon.png" title="menu"></a>
+                </nav>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="retro_chic_apartment_page1">
+                  
+                    <img class="cover" src="./images/Modern italian apartment/cove.jpg">
+                    <i class="cover_p">MODERN ITATIAN APARTMENT</i>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row retro_chic_apartment_page4">
+                <div class="col-sm-12">
+                    <img src="./images/Modern italian apartment/1.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row retro_chic_apartment_page4">
+                <div class="col-sm-12">
+                    <img src="./images/Modern italian apartment/2.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row retro_chic_apartment_page4">
+                <div class="col-sm-12">
+                    <img src="./images/Modern italian apartment/3.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row retro_chic_apartment_page4">
+                <div class="col-sm-12">
+                    <img src="./images/Modern italian apartment/4.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row retro_chic_apartment_page4">
+                <div class="col-sm-12">
+                    <img src="./images/Modern italian apartment/5.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="modern_italian_apartment2" style="display: flex; position: relative;">
+                <div style="width: 50%; align-self: center; display: inline-block;">
+                    <img class="img1" src="./images/Modern italian apartment/6.jpg">
+                </div>
+                <div style="width: 50%; align-self: flex-start;">
+                    <img class="img2" src="./images/Modern italian apartment/7.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row retro_chic_apartment_page4">
+                <div class="col-sm-12">
+                    <img src="./images/Modern italian apartment/8.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row retro_chic_apartment_page4">
+                <div class="col-sm-12">
+                    <img src="./images/Modern italian apartment/9.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row retro_chic_apartment_page4">
+                <div class="col-sm-12">
+                    <img src="./images/Modern italian apartment/10.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="retro_chic_apartment_page7">
+                    <img class="img1" src="./images/Modern italian apartment/11.jpg">
+                    <img class="img2" src="./images/logo2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
